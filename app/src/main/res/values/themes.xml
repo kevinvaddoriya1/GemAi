@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Parth_UI" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="boxStrokeColor">@color/themecolor</item>
+        <item name="android:statusBarColor">@color/Backgroundcolor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:colorPrimary">@color/themecolor</item>
+        <item name="subtitleTextColor">@color/subfontcolor</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/themecolor</item>
+        <item name="colorSwitchThumbNormal">@color/Backgroundcolor</item>
+        <item name="android:colorForeground">@color/subfontcolor</item>
+    </style>
+
+
+    <!--    <style name="night.Theme.Parth_UI" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="boxStrokeColor">@color/themecolor</item>-->
+<!--        <item name="android:statusBarColor">@color/white</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--        <item name="backgroundColor">@color/Backgroundcolor</item>-->
+<!--        <item name="android:colorPrimary">@color/themecolor</item>-->
+<!--        <item name="subtitleTextColor">@color/subfontcolor</item>-->
+<!--    </style>-->
+
+<!--    <style name="night.Theme.Parth_UI." parent="Base.Theme.Parth_UI" />-->
+
+
+</resources>

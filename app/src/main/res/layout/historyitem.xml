@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:background="@drawable/destopbg">
+
+
+    <LinearLayout
+        android:id="@+id/ll_topic"
+        android:paddingVertical="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/deleteimg"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="@dimen/_3sdp"
+            android:id="@+id/historyimg"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_7sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/history" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:maxLines="2"
+            android:id="@+id/historyTxt"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="History"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ImageView
+        android:layout_marginRight="@dimen/_3sdp"
+        android:id="@+id/deleteimg"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_7sdp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/delete" />
+</RelativeLayout>

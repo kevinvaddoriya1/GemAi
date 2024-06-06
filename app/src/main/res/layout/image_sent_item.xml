@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_selected"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:riv_corner_radius="@dimen/_10sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="end"/>
+
+    <TextView android:id="@+id/txt_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:background="@drawable/background_message_sent"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".activities.TextToVoice">
+
+    <RelativeLayout
+        android:id="@+id/notestoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <ImageButton
+            android:id="@+id/voicetotxtbackarrow"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/voicetotxtbackarrow"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="Voice to text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_voice_siri"
+            android:visibility="gone"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie_voice" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/selectAudio"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/destopbg"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mic" />
+
+
+            <TextView
+                android:id="@+id/taptxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectgAudio"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Tap and speak"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/Backgroundcolor"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_85sdp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/spleshbg"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:src="@drawable/chatbot"
+            android:scaleType="fitXY"
+            android:padding="@dimen/_15sdp"
+            android:layout_height="@dimen/_100sdp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Gem Ai"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_22sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/themecolor"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

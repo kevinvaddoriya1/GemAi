@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pagerlayout"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.87" />
+
+        <LinearLayout
+            android:layout_marginTop="-50dp"
+            android:id="@+id/indicatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/inter_medium" />
+
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="@dimen/_158sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/inter_semi_bold"
+            android:background="@drawable/btnbg"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/btnbg"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

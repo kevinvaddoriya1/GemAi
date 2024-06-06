@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".activities.ImageToTextActivity">
+
+    <RelativeLayout
+        android:id="@+id/notestoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <ImageButton
+            android:id="@+id/imgtotxtbackarrow"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/imgtotxtbackarrow"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="Image to text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImageChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/ll"
+            android:visibility="gone"
+            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnSelectImage"
+                android:layout_gravity="center"
+                android:background="@drawable/destopbg"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@drawable/add"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="fitCenter"
+                android:layout_height="@dimen/_40sdp" />
+
+            <EditText
+                android:id="@+id/edt_question"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:maxLines="4"
+                android:minLines="1"
+                android:background="@drawable/destopbg"
+                android:hint="Type a question..."
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/subfontcolor"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/btnSendQuestion"
+                android:layout_gravity="center"
+                android:background="@drawable/destopbg"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@drawable/send"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

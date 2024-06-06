@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Backgroundcolor">#0F151D</color>
+    <color name="themecolor">#00A5FF</color>
+    <color name="subfontcolor">#5C6B82</color>
+    <color name="footercolor">#1E2B3F</color>
+    <color name="unselectdotcolor">#b2e4ff</color>
+</resources>
